@@ -1,29 +1,69 @@
 const TransactionTable = ({ transactions }) => {
-    const headers = ["Transaction ID", "Customer Name", "Purchase Date", "Product", "Price", "Reward Points"];
-    
-    return (
-        <div style={{ overflowX: 'auto' }}>
-            <h2> Transactions</h2>
-            <table style={{ minWidth: '100%', border: '1px solid black', textAlign: 'left', borderCollapse: 'collapse' }}>
-                <thead>
-                    <tr style={{ backgroundColor: '#f2f2f2' }}>
-                        {headers.map((header, index) => (
-                            <th key={index} style={{ border: '1px solid black', padding: '8px' }}>{header}</th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {transactions.map((transaction) => (
-                        <tr key={transaction.transactionId} style={{ backgroundColor: transactions.indexOf(transaction) % 2 === 0 ? '#ffffff' : '#f9f9f9' }}>
-                            {[transaction.transactionId, transaction.customerName, new Date(transaction.purchaseDate).toLocaleDateString(), transaction.product, `$${transaction.price.toFixed(2)}`, transaction.rewardPoints].map((value, index) => (
-                                <td key={index} style={{ border: '1px solid black', padding: '8px' }}>{value}</td>
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    );
+  // Define table headers for transaction details
+  const headers = [
+    "Transaction ID",
+    "Customer Name",
+    "Purchase Date",
+    "Product",
+    "Price",
+    "Reward Points",
+  ];
+
+  return (
+    <div style={{ overflowX: "auto" }}>
+      <h2> Transactions</h2>
+      <table
+        style={{
+          minWidth: "100%",
+          border: "1px solid black",
+          textAlign: "left",
+          borderCollapse: "collapse",
+        }}
+      >
+        <thead>
+          <tr style={{ backgroundColor: "#f2f2f2" }}>
+            {/* Render table headers dynamically */}
+            {headers.map((header, index) => (
+              <th
+                key={index}
+                style={{ border: "1px solid black", padding: "8px" }}
+              >
+                {header}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {/* Loop through transactions and display data in rows */}
+          {transactions.map((transaction, index) => (
+            <tr
+              key={transaction.transactionId}
+              style={{
+                backgroundColor: index % 2 === 0 ? "#ffffff" : "#f9f9f9",
+              }}
+            >
+              {/* Map transaction details into table cells */}
+              {[
+                transaction.transactionId,
+                transaction.customerName,
+                new Date(transaction.purchaseDate).toLocaleDateString(),
+                transaction.product,
+                `$${transaction.price.toFixed(2)}`,
+                transaction.rewardPoints,
+              ].map((value, idx) => (
+                <td
+                  key={idx}
+                  style={{ border: "1px solid black", padding: "8px" }}
+                >
+                  {value}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 };
 
 export default TransactionTable;
