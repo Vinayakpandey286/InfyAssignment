@@ -1,8 +1,12 @@
 const TotalRewardsTable = ({ transactions }) => {
   // Calculate total rewards for each customer
   const totalRewards = transactions.reduce(
-    (acc, { customerName, rewardPoints }) => {
-      acc[customerName] = (acc[customerName] || 0) + rewardPoints;
+    (acc, { customerName, rewardPoints, customerId }) => {
+      acc[customerName] = {
+        rewardPoints: (acc[customerName]?.rewardPoints || 0) + rewardPoints,
+        customerId,
+        customerName,
+      };
       return acc;
     },
     {}
@@ -22,29 +26,31 @@ const TotalRewardsTable = ({ transactions }) => {
         <thead>
           <tr style={{ backgroundColor: "#f2f2f2" }}>
             {/* Render table headers dynamically */}
-            {["Customer Name", "Total Reward Points"].map((header, index) => (
-              <th
-                key={index}
-                style={{ border: "1px solid black", padding: "8px" }}
-              >
-                {header}
-              </th>
-            ))}
+            {["CustomerId", "Customer Name", "Total Reward Points"].map(
+              (header, index) => (
+                <th
+                  key={index}
+                  style={{ border: "1px solid black", padding: "8px" }}
+                >
+                  {header}
+                </th>
+              )
+            )}
           </tr>
         </thead>
         <tbody>
           {/* Loop through total rewards and display data in rows */}
-          {Object.entries(totalRewards).map(([name, points]) => (
-            <tr key={name} style={{ backgroundColor: "#ffffff" }}>
-              {/* Map total rewards details into table cells */}
-              {[name, points].map((value, index) => (
-                <td
-                  key={index}
-                  style={{ border: "1px solid black", padding: "8px" }}
-                >
-                  {value}
-                </td>
-              ))}
+          {Object.values(totalRewards).map((value, index) => (
+            <tr key={index} style={{ backgroundColor: "#ffffff" }}>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                {value?.customerId}
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                {value?.customerName}
+              </td>
+              <td style={{ border: "1px solid black", padding: "8px" }}>
+                {value?.rewardPoints}
+              </td>
             </tr>
           ))}
         </tbody>

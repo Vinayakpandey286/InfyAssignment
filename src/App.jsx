@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import RewardsTable from "./components/RewardsTable";
 import TotalRewardsTable from "./components/TotalRewardsTable";
 import TransactionTable from "./components/TransactionTable";
-import { aggregateByMonthAndYear, sortByDate } from "./utils/calculateRewards";
+import {
+  aggregateByMonthAndYear,
+  calculateRewardPoints,
+  sortByDate,
+} from "./utils/calculateRewards";
+import { transactions } from "./utils/mockData";
 
 const App = () => {
   // State variables to manage data fetching, error handling, and transactions
@@ -10,16 +15,18 @@ const App = () => {
   const [error, setError] = useState(null);
   const [sortedTransactions, setSortedTransactions] = useState([]);
   const [transaction, setTransaction] = useState([]);
+  const [buttonactive, setButtonActive] = useState(false);
 
   // Fetch transaction data from the API on component mount
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = () => {
       try {
-        const res = await fetch(
-          "https://mocki.io/v1/8864718a-3a60-421a-a93a-8366e6234b66"
-        );
-        const response = await res.json();
-        setTransaction(response); // Store the fetched transactions
+        // const res = await fetch(
+        //   "https://mocki.io/v1/8864718a-3a60-421a-a93a-8366e6234b66"
+        // );
+        // const response = await res.json();
+
+        setTransaction(transactions); // Store the fetched transactions
         setIsLoading(false); // Mark data as loaded
       } catch (err) {
         setError(err); // Store the error in state
@@ -32,15 +39,9 @@ const App = () => {
 
   // Process transactions to calculate reward points whenever transactions update
   useEffect(() => {
+    console.log(transactions)
     let rewards = transaction.map((transaction) => {
-      let points = 0;
-      // Calculate reward points: 2 points for every dollar spent above $100, 1 point for every dollar above $50
-      if (transaction.price > 100) {
-        points += 50 + (Math.floor(transaction.price) - 100) * 2;
-      }
-      if (transaction.price > 50 && transaction.price <= 100) {
-        points += Math.floor(transaction.price) - 50;
-      }
+      const points = calculateRewardPoints(transaction?.price);
 
       return {
         ...transaction,
@@ -54,6 +55,9 @@ const App = () => {
   // Aggregate rewards by month and year
   const aggregatedRewards = aggregateByMonthAndYear(sortedTransactions);
 
+  const getLastThreeMonthData = () => {
+    setButtonActive((prev) => !prev);
+  };
   return (
     <>
       {isLoading ? (
@@ -62,7 +66,21 @@ const App = () => {
         <div>Error: {error.message}</div>
       ) : (
         <div>
-          <h1>User Rewards</h1>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <h1>User Rewards</h1>
+            <button
+              style={{
+                height: "30px",
+                padding: "8px",
+                alignSelf: "center",
+                marginRight: "20px",
+                ...(buttonactive && { backgroundColor: "lightcoral" }),
+              }}
+              onClick={getLastThreeMonthData}
+            >
+              Last 3 months
+            </button>
+          </div>
           {/* Table displaying transaction details */}
           <TransactionTable transactions={sortedTransactions} />
           {/* Table displaying aggregated rewards per month */}

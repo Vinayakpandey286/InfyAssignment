@@ -26,7 +26,11 @@ const TransactionTable = ({ transactions }) => {
             {headers.map((header, index) => (
               <th
                 key={index}
-                style={{ border: "1px solid black", padding: "8px" }}
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  textAlign: "center",
+                }}
               >
                 {header}
               </th>
@@ -48,14 +52,20 @@ const TransactionTable = ({ transactions }) => {
                 transaction.customerName,
                 new Date(transaction.purchaseDate).toLocaleDateString(),
                 transaction.product,
-                `$${transaction.price.toFixed(2)}`,
+                transaction.price,
                 transaction.rewardPoints,
               ].map((value, idx) => (
                 <td
                   key={idx}
-                  style={{ border: "1px solid black", padding: "8px" }}
+                  style={{
+                    border: "1px solid black",
+                    padding: "8px",
+                    ...(typeof value === "number"
+                      ? { textAlign: "right" }
+                      : {}),
+                  }}
                 >
-                  {value}
+                  {idx === 4 ? ` $${value.toFixed(2)}` : value}
                 </td>
               ))}
             </tr>
