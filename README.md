@@ -54,12 +54,23 @@ Customers earn:
 
 Here are some screenshots of the application:
 
-- ![Loader Image](./assets/Loader.png)
-- ![Error Image](./assets/Error.png)
-- ![Total Transactions Image](./assets/Transactions.png)
-- ![User Monthly Rewards Image](./assets/MonthlyRewards.png)
-- ![Total Rewards Image](./assets/TotalRewards.png)
-- ![Last Three Months Data Image](./assets/LastThreeMonth.png)
+### Loader Image
+![Loader Image](./assets/Loader.png)
+
+### Error Image
+![Error Image](./assets/Error.png)
+
+### Total Transactions Image
+![Total Transactions Image](./assets/Transactions.png)
+
+### User Monthly Rewards Image
+![User Monthly Rewards Image](./assets/MonthlyRewards.png)
+
+### Total Rewards Image
+![Total Rewards Image](./assets/TotalRewards.png)
+
+### Last Three Months Data Image
+![Last Three Months Data Image](./assets/LastThreeMonth.png)
 
 
 
