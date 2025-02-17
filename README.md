@@ -63,7 +63,7 @@ Customers earn:
 No points for transactions $50 or below.
 
 ![Loader Image](./assets/Loader.png)
-![Error Image](./assets/Error.png)
+![Error Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/main/assets/Error.png?raw=true)
 ![Total Transactions Image](./assets/Transactions.png)
 ![User Monthly Rewards Image](./assets/MonthlyRewards.png)
 ![Total Rewards Image](./assets/TotalRewards.png)
