@@ -12,6 +12,11 @@ const TotalRewardsTable = ({ transactions }) => {
     {}
   );
 
+  // Sort the totalRewards by customerId (converted to number)
+  const sortedRewards = Object.values(totalRewards).sort((a, b) => {
+    return Number(a.customerId) - Number(b.customerId);
+  });
+
   return (
     <div style={{ overflowX: "auto" }}>
       <h2> Total Rewards</h2>
@@ -39,8 +44,8 @@ const TotalRewardsTable = ({ transactions }) => {
           </tr>
         </thead>
         <tbody>
-          {/* Loop through total rewards and display data in rows */}
-          {Object.values(totalRewards).map((value, index) => (
+          {/* Loop through sorted total rewards and display data in rows */}
+          {sortedRewards.map((value, index) => (
             <tr key={index} style={{ backgroundColor: "#ffffff" }}>
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {value?.customerId}
@@ -48,7 +53,13 @@ const TotalRewardsTable = ({ transactions }) => {
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {value?.customerName}
               </td>
-              <td style={{ border: "1px solid black", padding: "8px" }}>
+              <td
+                style={{
+                  border: "1px solid black",
+                  padding: "8px",
+                  textAlign: "right",
+                }}
+              >
                 {value?.rewardPoints}
               </td>
             </tr>

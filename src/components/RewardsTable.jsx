@@ -57,8 +57,8 @@ const RewardsTable = ({ aggregatedRewards }) => {
                 }
               >
                 <td style={thTdStyle}>{value?.monthYear}</td>
-                <td style={thTdStyle}>{value?.points}</td>
-                <td style={thTdStyle}>{value?.customerId}</td>
+                <td style={{...thTdStyle, textAlign: "right"}}>{value?.points}</td>
+                <td style={{...thTdStyle, textAlign: "right"}}>{value?.customerId}</td>
                 <td style={thTdStyle}>{value?.customerName}</td>
               </tr>
             )
