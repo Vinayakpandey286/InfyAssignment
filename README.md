@@ -63,7 +63,7 @@ Customers earn:
 No points for transactions $50 or below.
 
 ![Loader Image](./assets/Loader.png)
-![Error Image](https://drive.google.com/file/d/1L_oQ4JjT_gtj79GhhmA7aqnkt0rxEqaC/view?usp=sharing)
+![Error Image](https://drive.google.com/uc?id=1L_oQ4JjT_gtj79GhhmA7aqnkt0rxEqaC&export=view)
 ![Total Transactions Image](./assets/Transactions.png)
 ![User Monthly Rewards Image](./assets/MonthlyRewards.png)
 ![Total Rewards Image](./assets/TotalRewards.png)
