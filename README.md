@@ -62,7 +62,9 @@ Customers earn:
 
 No points for transactions $50 or below.
 
-API Endpoint
-The app fetches data from:
-
-https://mocki.io/v1/8864718a-3a60-421a-a93a-8366e6234b66
+![Loader Image](public/assets/Loader.png)
+![Error Image](public/assets/Error.png)
+![Total Transactions Image](public/assets/Transactions.png)
+![User Monthly Rewards Image](public/assets/MonthlyRewards.png)
+![Total Rewards Image](public/assets/TotalRewards.png)
+![Last Three Months Data Image](public/assets/LastThreeMonth.png)
