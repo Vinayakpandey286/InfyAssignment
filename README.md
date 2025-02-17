@@ -4,7 +4,7 @@ This is a React-based web application that calculates and displays reward points
 
 ## Features
 
-- Fetches transaction data from an API.
+- Fetches transaction data from an JSON file.
 - Calculates reward points based on the purchase amount.
 - Displays transactions in a table format.
 - Aggregates reward points by month and year.
@@ -24,7 +24,7 @@ This is a React-based web application that calculates and displays reward points
     git clone https://github.com/your-repo/user-rewards-dashboard.git
     ```
 
-2. Install dependencies:
+Install dependencies:
 
     ```bash
     npm install
@@ -39,7 +39,7 @@ This is a React-based web application that calculates and displays reward points
 4. Open your browser and go to:
 
     ```
-    http://localhost:3000
+    http://localhost:5173
     ```
 
 ## Reward Points Calculation
@@ -61,8 +61,5 @@ Here are some screenshots of the application:
 - ![Total Rewards Image](./assets/TotalRewards.png)
 - ![Last Three Months Data Image](./assets/LastThreeMonth.png)
 
-## Additional Notes
 
-- If you're using images from external sources like Google Drive, ensure the file is publicly accessible and use direct download links. Alternatively, you can upload images to your repository for more stable access.
-- Make sure to test the app locally using `npm run dev` to verify everything is working as expected.
 
