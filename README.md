@@ -20,7 +20,7 @@ This is a React-based web application that calculates and displays reward points
 
 Clone the repository:
 
-```bash
+````bash
 git clone https://github.com/your-repo/user-rewards-dashboard.git
 
 Install dependencies:
@@ -62,9 +62,10 @@ Customers earn:
 
 No points for transactions $50 or below.
 
-![Loader Image](./assets/Loader.png)
-![Error Image](./assets/Error.png)
-![Total Transactions Image](./assets/Transactions.png)
-![User Monthly Rewards Image](./assets/MonthlyRewards.png)
-![Total Rewards Image](./assets/TotalRewards.png)
-![Last Three Months Data Image](./assets/LastThreeMonth.png)
+![Loader Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/Loader.png)
+![Error Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/Error.png)
+![Total Transactions Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/Transactions.png)
+![User Monthly Rewards Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/MonthlyRewards.png)
+![Total Rewards Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/TotalRewards.png)
+![Last Three Months Data Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/LastThreeMonth.png)
+````
