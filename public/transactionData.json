@@ -1,0 +1,802 @@
+[
+    {
+        "transactionId": "1",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2025-02-02T06:18:21.578Z",
+        "product": "Camera",
+        "price": 182.93
+    },
+    {
+        "transactionId": "2",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-04-18T20:22:05.332Z",
+        "product": "Mouse",
+        "price": 259.38
+    },
+    {
+        "transactionId": "3",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-07-23T09:41:50.341Z",
+        "product": "Smartphone",
+        "price": 124.84
+    },
+    {
+        "transactionId": "4",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-12-25T17:32:45.763Z",
+        "product": "Laptop",
+        "price": 141.02
+    },
+    {
+        "transactionId": "5",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-12-25T03:01:23.376Z",
+        "product": "Printer",
+        "price": 231.1
+    },
+    {
+        "transactionId": "6",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-12-11T00:30:49.063Z",
+        "product": "Keyboard",
+        "price": 116.1
+    },
+    {
+        "transactionId": "7",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-09-04T21:14:59.367Z",
+        "product": "Tablet",
+        "price": 222.84
+    },
+    {
+        "transactionId": "8",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-09-28T00:27:18.204Z",
+        "product": "Monitor",
+        "price": 387.79
+    },
+    {
+        "transactionId": "9",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2025-01-02T21:25:56.114Z",
+        "product": "Tablet",
+        "price": 201
+    },
+    {
+        "transactionId": "10",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-10-23T00:09:55.599Z",
+        "product": "Camera",
+        "price": 381.28
+    },
+    {
+        "transactionId": "11",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-10-06T21:58:45.261Z",
+        "product": "Mouse",
+        "price": 394.86
+    },
+    {
+        "transactionId": "12",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-12-20T02:46:51.314Z",
+        "product": "Headphones",
+        "price": 128.92
+    },
+    {
+        "transactionId": "13",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-08-27T10:07:12.801Z",
+        "product": "Camera",
+        "price": 98.3
+    },
+    {
+        "transactionId": "14",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2025-01-07T04:34:56.515Z",
+        "product": "Tablet",
+        "price": 306.68
+    },
+    {
+        "transactionId": "15",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-09-15T03:20:58.307Z",
+        "product": "Keyboard",
+        "price": 343.18
+    },
+    {
+        "transactionId": "16",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2025-01-22T20:10:33.124Z",
+        "product": "Monitor",
+        "price": 333.59
+    },
+    {
+        "transactionId": "17",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-08-14T16:59:11.066Z",
+        "product": "Smartphone",
+        "price": 491.21
+    },
+    {
+        "transactionId": "18",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-07-02T21:29:57.924Z",
+        "product": "Camera",
+        "price": 412.44
+    },
+    {
+        "transactionId": "19",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2025-01-26T21:33:39.989Z",
+        "product": "Keyboard",
+        "price": 232.68
+    },
+    {
+        "transactionId": "20",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2025-01-16T02:01:42.314Z",
+        "product": "Smartwatch",
+        "price": 55.89
+    },
+    {
+        "transactionId": "21",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-10-29T19:57:25.576Z",
+        "product": "Camera",
+        "price": 242.49
+    },
+    {
+        "transactionId": "22",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-07-06T18:02:46.530Z",
+        "product": "Camera",
+        "price": 297.71
+    },
+    {
+        "transactionId": "23",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2025-01-10T09:47:26.396Z",
+        "product": "Printer",
+        "price": 245.84
+    },
+    {
+        "transactionId": "24",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-12-02T11:09:50.709Z",
+        "product": "Printer",
+        "price": 332.12
+    },
+    {
+        "transactionId": "25",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-09-16T23:54:34.451Z",
+        "product": "Monitor",
+        "price": 304.67
+    },
+    {
+        "transactionId": "26",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-06-25T07:33:06.266Z",
+        "product": "Camera",
+        "price": 344.69
+    },
+    {
+        "transactionId": "27",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-07-19T01:16:43.915Z",
+        "product": "Mouse",
+        "price": 449.17
+    },
+    {
+        "transactionId": "28",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-12-24T02:27:32.074Z",
+        "product": "Monitor",
+        "price": 171.57
+    },
+    {
+        "transactionId": "29",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2025-02-08T02:32:33.402Z",
+        "product": "Smartphone",
+        "price": 445.96
+    },
+    {
+        "transactionId": "30",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-10-07T08:50:45.942Z",
+        "product": "Monitor",
+        "price": 78.12
+    },
+    {
+        "transactionId": "31",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-12-13T16:42:39.365Z",
+        "product": "Printer",
+        "price": 115.47
+    },
+    {
+        "transactionId": "32",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-06-14T07:28:46.786Z",
+        "product": "Monitor",
+        "price": 181.63
+    },
+    {
+        "transactionId": "33",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-05-19T04:35:19.325Z",
+        "product": "Monitor",
+        "price": 368.22
+    },
+    {
+        "transactionId": "34",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-12-31T18:03:49.032Z",
+        "product": "Mouse",
+        "price": 379.13
+    },
+    {
+        "transactionId": "35",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-07-29T15:33:24.828Z",
+        "product": "Smartwatch",
+        "price": 479.43
+    },
+    {
+        "transactionId": "36",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-07-09T20:34:04.578Z",
+        "product": "Mouse",
+        "price": 129.62
+    },
+    {
+        "transactionId": "37",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2025-01-03T14:28:46.138Z",
+        "product": "Keyboard",
+        "price": 291.07
+    },
+    {
+        "transactionId": "38",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-06-20T00:18:50.967Z",
+        "product": "Keyboard",
+        "price": 62.27
+    },
+    {
+        "transactionId": "39",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-05-10T09:46:42.008Z",
+        "product": "Laptop",
+        "price": 126.22
+    },
+    {
+        "transactionId": "40",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2025-01-03T02:36:23.568Z",
+        "product": "Printer",
+        "price": 105.79
+    },
+    {
+        "transactionId": "41",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-06-12T06:01:58.927Z",
+        "product": "Keyboard",
+        "price": 265.58
+    },
+    {
+        "transactionId": "42",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2025-02-07T06:07:42.826Z",
+        "product": "Headphones",
+        "price": 381.44
+    },
+    {
+        "transactionId": "43",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-09-25T05:39:55.343Z",
+        "product": "Smartwatch",
+        "price": 74.73
+    },
+    {
+        "transactionId": "44",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2025-01-20T00:40:55.375Z",
+        "product": "Tablet",
+        "price": 53.4
+    },
+    {
+        "transactionId": "45",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2025-01-04T05:33:57.346Z",
+        "product": "Printer",
+        "price": 233.24
+    },
+    {
+        "transactionId": "46",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-05-25T21:02:05.323Z",
+        "product": "Keyboard",
+        "price": 328.71
+    },
+    {
+        "transactionId": "47",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-10-23T23:56:05.723Z",
+        "product": "Printer",
+        "price": 203.29
+    },
+    {
+        "transactionId": "48",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-07-15T18:35:37.050Z",
+        "product": "Smartphone",
+        "price": 348.77
+    },
+    {
+        "transactionId": "49",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2025-01-11T23:12:20.931Z",
+        "product": "Tablet",
+        "price": 153.09
+    },
+    {
+        "transactionId": "50",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-12-02T08:46:55.341Z",
+        "product": "Laptop",
+        "price": 354.43
+    },
+    {
+        "transactionId": "51",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-09-12T01:29:25.352Z",
+        "product": "Monitor",
+        "price": 353.83
+    },
+    {
+        "transactionId": "52",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-11-28T03:10:56.976Z",
+        "product": "Smartphone",
+        "price": 308.45
+    },
+    {
+        "transactionId": "53",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2025-01-21T11:19:30.054Z",
+        "product": "Headphones",
+        "price": 450.97
+    },
+    {
+        "transactionId": "54",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-10-08T08:37:14.029Z",
+        "product": "Printer",
+        "price": 131.35
+    },
+    {
+        "transactionId": "55",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-12-22T08:14:26.313Z",
+        "product": "Headphones",
+        "price": 139.9
+    },
+    {
+        "transactionId": "56",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-08-31T09:11:39.472Z",
+        "product": "Headphones",
+        "price": 135.63
+    },
+    {
+        "transactionId": "57",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-04-23T06:14:05.148Z",
+        "product": "Monitor",
+        "price": 166.04
+    },
+    {
+        "transactionId": "58",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-12-09T23:34:48.617Z",
+        "product": "Smartwatch",
+        "price": 495.94
+    },
+    {
+        "transactionId": "59",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-07-10T04:13:41.878Z",
+        "product": "Smartwatch",
+        "price": 340.58
+    },
+    {
+        "transactionId": "60",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-06-30T10:51:18.520Z",
+        "product": "Tablet",
+        "price": 480
+    },
+    {
+        "transactionId": "61",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-09-15T07:31:14.121Z",
+        "product": "Tablet",
+        "price": 354.17
+    },
+    {
+        "transactionId": "62",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-11-03T09:07:47.086Z",
+        "product": "Laptop",
+        "price": 412.09
+    },
+    {
+        "transactionId": "63",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-09-24T09:09:18.676Z",
+        "product": "Mouse",
+        "price": 120.02
+    },
+    {
+        "transactionId": "64",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-07-19T19:21:09.253Z",
+        "product": "Monitor",
+        "price": 120.3
+    },
+    {
+        "transactionId": "65",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-10-20T19:08:18.335Z",
+        "product": "Tablet",
+        "price": 472.34
+    },
+    {
+        "transactionId": "66",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2025-02-05T14:32:24.109Z",
+        "product": "Smartphone",
+        "price": 107.57
+    },
+    {
+        "transactionId": "67",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-11-17T07:40:26.802Z",
+        "product": "Printer",
+        "price": 265.48
+    },
+    {
+        "transactionId": "68",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-05-31T14:33:06.014Z",
+        "product": "Printer",
+        "price": 288.7
+    },
+    {
+        "transactionId": "69",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-10-04T04:07:58.127Z",
+        "product": "Keyboard",
+        "price": 158.72
+    },
+    {
+        "transactionId": "70",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-10-20T11:59:36.340Z",
+        "product": "Mouse",
+        "price": 364.61
+    },
+    {
+        "transactionId": "71",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-07-12T22:34:20.993Z",
+        "product": "Smartwatch",
+        "price": 342.33
+    },
+    {
+        "transactionId": "72",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-04-19T12:07:41.754Z",
+        "product": "Smartwatch",
+        "price": 485.88
+    },
+    {
+        "transactionId": "73",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-12-16T21:15:02.095Z",
+        "product": "Laptop",
+        "price": 263.76
+    },
+    {
+        "transactionId": "74",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-04-24T22:31:21.519Z",
+        "product": "Smartwatch",
+        "price": 194.63
+    },
+    {
+        "transactionId": "75",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-07-28T11:04:05.100Z",
+        "product": "Monitor",
+        "price": 69.8
+    },
+    {
+        "transactionId": "76",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-05-22T13:54:50.149Z",
+        "product": "Mouse",
+        "price": 359.4
+    },
+    {
+        "transactionId": "77",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2025-01-07T17:03:43.286Z",
+        "product": "Smartwatch",
+        "price": 262.69
+    },
+    {
+        "transactionId": "78",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-12-24T22:27:25.624Z",
+        "product": "Mouse",
+        "price": 336.3
+    },
+    {
+        "transactionId": "79",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-07-20T17:02:53.537Z",
+        "product": "Laptop",
+        "price": 412.02
+    },
+    {
+        "transactionId": "80",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2024-04-17T05:49:24.456Z",
+        "product": "Camera",
+        "price": 230.55
+    },
+    {
+        "transactionId": "81",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-10-28T01:58:35.225Z",
+        "product": "Camera",
+        "price": 253.42
+    },
+    {
+        "transactionId": "82",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-10-19T23:49:35.222Z",
+        "product": "Tablet",
+        "price": 278.21
+    },
+    {
+        "transactionId": "83",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-10-05T19:19:05.445Z",
+        "product": "Monitor",
+        "price": 107.26
+    },
+    {
+        "transactionId": "84",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-10-05T19:09:16.232Z",
+        "product": "Keyboard",
+        "price": 233.52
+    },
+    {
+        "transactionId": "85",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-05-05T17:39:29.930Z",
+        "product": "Printer",
+        "price": 377.29
+    },
+    {
+        "transactionId": "86",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-04-19T17:06:29.153Z",
+        "product": "Tablet",
+        "price": 291.66
+    },
+    {
+        "transactionId": "87",
+        "customerId": "499965",
+        "customerName": "Robert Brown",
+        "purchaseDate": "2025-02-01T21:35:35.268Z",
+        "product": "Headphones",
+        "price": 473.98
+    },
+    {
+        "transactionId": "88",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2025-01-04T10:31:20.519Z",
+        "product": "Mouse",
+        "price": 350.72
+    },
+    {
+        "transactionId": "89",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-12-08T16:21:25.640Z",
+        "product": "Smartwatch",
+        "price": 336.09
+    },
+    {
+        "transactionId": "90",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-08-09T11:27:17.147Z",
+        "product": "Headphones",
+        "price": 86.21
+    },
+    {
+        "transactionId": "91",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-06-03T10:45:07.504Z",
+        "product": "Smartphone",
+        "price": 290.82
+    },
+    {
+        "transactionId": "92",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2024-07-01T11:50:36.688Z",
+        "product": "Camera",
+        "price": 411.2
+    },
+    {
+        "transactionId": "93",
+        "customerId": "534226",
+        "customerName": "John Doe",
+        "purchaseDate": "2025-01-09T02:13:02.804Z",
+        "product": "Camera",
+        "price": 194.95
+    },
+    {
+        "transactionId": "94",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2025-02-16T14:58:09.755Z",
+        "product": "Tablet",
+        "price": 154.21
+    },
+    {
+        "transactionId": "95",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-10-12T03:01:03.074Z",
+        "product": "Smartphone",
+        "price": 301.12
+    },
+    {
+        "transactionId": "96",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2025-02-15T21:34:45.413Z",
+        "product": "Camera",
+        "price": 481.3
+    },
+    {
+        "transactionId": "97",
+        "customerId": "381660",
+        "customerName": "Jane Smith",
+        "purchaseDate": "2024-10-12T04:56:58.167Z",
+        "product": "Printer",
+        "price": 230.3
+    },
+    {
+        "transactionId": "98",
+        "customerId": "062070",
+        "customerName": "Michael White",
+        "purchaseDate": "2024-07-05T13:39:53.309Z",
+        "product": "Printer",
+        "price": 132.9
+    },
+    {
+        "transactionId": "99",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-05-07T18:46:19.019Z",
+        "product": "Smartwatch",
+        "price": 339.5
+    },
+    {
+        "transactionId": "100",
+        "customerId": "114150",
+        "customerName": "Alice Johnson",
+        "purchaseDate": "2024-09-20T20:43:18.952Z",
+        "product": "Smartphone",
+        "price": 488.53
+    }
+]

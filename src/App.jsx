@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import RewardsTable from "./components/RewardsTable";
 import TotalRewardsTable from "./components/TotalRewardsTable";
 import TransactionTable from "./components/TransactionTable";
@@ -7,57 +7,54 @@ import {
   calculateRewardPoints,
   sortByDate,
 } from "./utils/calculateRewards";
-import { transactions } from "./utils/mockData";
+import { fetchTransactions } from "./service/TransactionService";
 
 const App = () => {
   // State variables to manage data fetching, error handling, and transactions
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [sortedTransactions, setSortedTransactions] = useState([]);
-  const [transaction, setTransaction] = useState([]);
+  const [transactions, setTransactions] = useState([]);
   const [buttonactive, setButtonActive] = useState(false);
 
-  // Fetch transaction data from the API on component mount
+  // Fetch transaction data from the service on component mount
   useEffect(() => {
-    const fetchData = () => {
+    const getTransactions = async () => {
       try {
-        // const res = await fetch(
-        //   "https://mocki.io/v1/8864718a-3a60-421a-a93a-8366e6234b66"
-        // );
-        // const response = await res.json();
-
-        setTransaction(transactions); // Store the fetched transactions
-        setIsLoading(false); // Mark data as loaded
-      } catch (err) {
-        setError(err); // Store the error in state
+        const data = await fetchTransactions(); // Use the service function
+        const rewards = data.map((transaction) => {
+          const points = calculateRewardPoints(transaction?.price);
+          return { ...transaction, rewardPoints: points };
+        });
+        const sortedData = sortByDate(rewards); // Sort transactions by date
+        setTransactions(sortedData);
+        setIsLoading(false);
+      } catch (error) {
+        setError(error);
         setIsLoading(false);
       }
     };
 
-    fetchData();
+    getTransactions(); // Call the async function to fetch transactions
   }, []);
 
-  // Process transactions to calculate reward points whenever transactions update
-  useEffect(() => {
-    console.log(transactions)
-    let rewards = transaction.map((transaction) => {
-      const points = calculateRewardPoints(transaction?.price);
+  // Memoize filtered transactions for last 3 months
+  const filteredTransactions = useMemo(() => {
+    if (!transactions.length) return [];
+    
+    const today = new Date();
+    const threeMonthsAgo = new Date(today.setMonth(today.getMonth() - 3));
 
-      return {
-        ...transaction,
-        rewardPoints: points, // Add reward points to transaction object
-      };
+    return transactions.filter((transaction) => {
+      const purchaseDate = new Date(transaction.purchaseDate);
+      return purchaseDate > threeMonthsAgo;
     });
-    const sortedData = sortByDate(rewards); // Sort transactions by date
-    setSortedTransactions(sortedData);
-  }, [transaction]);
+  }, [transactions]);
 
   // Aggregate rewards by month and year
-  const aggregatedRewards = aggregateByMonthAndYear(sortedTransactions);
+  const aggregatedRewards = aggregateByMonthAndYear(
+    buttonactive ? filteredTransactions : transactions
+  );
 
-  const getLastThreeMonthData = () => {
-    setButtonActive((prev) => !prev);
-  };
   return (
     <>
       {isLoading ? (
@@ -74,19 +71,23 @@ const App = () => {
                 padding: "8px",
                 alignSelf: "center",
                 marginRight: "20px",
-                ...(buttonactive && { backgroundColor: "lightcoral" }),
+                ...(buttonactive && { backgroundColor: "lightblue" }),
               }}
-              onClick={getLastThreeMonthData}
+              onClick={() => setButtonActive((prev) => !prev)}
             >
               Last 3 months
             </button>
           </div>
           {/* Table displaying transaction details */}
-          <TransactionTable transactions={sortedTransactions} />
+          <TransactionTable
+            transactions={buttonactive ? filteredTransactions : transactions}
+          />
           {/* Table displaying aggregated rewards per month */}
           <RewardsTable aggregatedRewards={aggregatedRewards} />
           {/* Table displaying total rewards earned */}
-          <TotalRewardsTable transactions={sortedTransactions} />
+          <TotalRewardsTable
+            transactions={buttonactive ? filteredTransactions : transactions}
+          />
         </div>
       )}
     </>

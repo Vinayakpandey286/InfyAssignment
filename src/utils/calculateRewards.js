@@ -15,9 +15,9 @@ export const aggregateByMonthAndYear = (transactions) => {
     }, {});
 };
 
-// Function to sort transactions by purchase date in ascending order
+// Function to sort transactions by purchase date in descending order
 export const sortByDate = (transactions) => {
-    return transactions.sort((a, b) => new Date(a.purchaseDate) - new Date(b.purchaseDate));
+    return transactions.sort((a, b) => new Date(b.purchaseDate) - new Date(a.purchaseDate));
 };
 
 
