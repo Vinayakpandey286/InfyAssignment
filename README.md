@@ -62,10 +62,10 @@ Customers earn:
 
 No points for transactions $50 or below.
 
-![Loader Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/Loader.png)
-![Error Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/Error.png)
-![Total Transactions Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/Transactions.png)
-![User Monthly Rewards Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/MonthlyRewards.png)
-![Total Rewards Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/TotalRewards.png)
-![Last Three Months Data Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/fa7ab9791f5c454382793195a36c5b18e6497bb5/public/assets/LastThreeMonth.png)
+![Loader Image]()
+![Error Image](https://github.com/Vinayakpandey286/InfyAssignment/blob/main/public/assets/Error.png?raw=true)
+![Total Transactions Image]()
+![User Monthly Rewards Image]()
+![Total Rewards Image]()
+![Last Three Months Data Image]()
 ````
