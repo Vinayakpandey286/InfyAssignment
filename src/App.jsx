@@ -66,7 +66,6 @@ const App = () => {
     buttonActive ? filteredTransactions : transactions
   );
 
-  console.log(customerId);
 
   return (
     <>
