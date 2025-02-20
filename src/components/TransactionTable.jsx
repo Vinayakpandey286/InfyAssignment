@@ -4,7 +4,7 @@ const TransactionTable = ({ transactions }) => {
     "Transaction ID",
     "Customer Name",
     "Purchase Date",
-    "Product",
+    "Product", 
     "Price",
     "Reward Points",
   ];

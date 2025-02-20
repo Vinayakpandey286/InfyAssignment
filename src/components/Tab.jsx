@@ -9,7 +9,7 @@ const Tab = ({ label1, label2, label3, onClickTab, activeTab }) => {
           justifyContent: "center",
           alignItems: "center",
           gap: "8px",
-          width: "33.33%",
+          width: "50%",
           cursor: "pointer",
           borderBottom:
             activeTab === 0 ? "2px solid #0073BB" : "1px solid #A6A8A9",
@@ -36,7 +36,7 @@ const Tab = ({ label1, label2, label3, onClickTab, activeTab }) => {
           justifyContent: "center",
           alignItems: "center",
           gap: "8px",
-          width: "33.33%",
+          width: "50%",
           cursor: "pointer",
           borderBottom:
             activeTab === 1 ? "2px solid #0073BB" : "1px solid #A6A8A9",
@@ -54,33 +54,6 @@ const Tab = ({ label1, label2, label3, onClickTab, activeTab }) => {
           }}
         >
           {label2}
-        </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          padding: "8px 0",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "8px",
-          width: "33.33%",
-          cursor: "pointer",
-          borderBottom:
-            activeTab === 2 ? "2px solid #0073BB" : "1px solid #A6A8A9",
-          color: activeTab === 2 ? "#0073BB" : "#A6A8A9",
-        }}
-        onClick={() => onClickTab(2)}
-      >
-        <div
-          style={{
-            textAlign: "center",
-            fontSize: "16px",
-            fontFamily: "Poppins, sans-serif",
-            fontWeight: "bold",
-            wordBreak: "break-word",
-          }}
-        >
-          {label3}
         </div>
       </div>
     </div>

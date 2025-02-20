@@ -1,4 +1,4 @@
-const TotalRewardsTable = ({ transactions }) => {
+const TotalRewardsTable = ({ transactions, setCustId, custId }) => {
   // Calculate total rewards for each customer
   const totalRewards = transactions.reduce(
     (acc, { customerName, rewardPoints, customerId }) => {
@@ -22,7 +22,7 @@ const TotalRewardsTable = ({ transactions }) => {
       <h2> Total Rewards</h2>
       <table
         style={{
-          minWidth: "100%",
+          width: "100%",
           border: "1px solid black",
           textAlign: "left",
           borderCollapse: "collapse",
@@ -46,7 +46,12 @@ const TotalRewardsTable = ({ transactions }) => {
         <tbody>
           {/* Loop through sorted total rewards and display data in rows */}
           {sortedRewards.map((value, index) => (
-            <tr key={index} style={{ backgroundColor: "#ffffff" }}>
+            <tr
+              key={index}
+              style={{ backgroundColor: custId===Number(value.customerId) ? "lightblue" :  "#ffffff" }}
+              onMouseEnter={() => setCustId(Number(value?.customerId))}
+              onMouseOut={() => setCustId(null)}
+            >
               <td style={{ border: "1px solid black", padding: "8px" }}>
                 {value?.customerId}
               </td>

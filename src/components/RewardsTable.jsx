@@ -1,10 +1,10 @@
 import React from "react";
 
-const RewardsTable = ({ aggregatedRewards }) => {
+const RewardsTable = ({ aggregatedRewards , custId}) => {
   // Inline styles for table and its elements
   const tableStyle = {
     width: "100%",
-    borderCollapse: "collapse",
+    borderCollapse: "collapse", 
     margin: "20px 0",
   };
 
@@ -29,7 +29,7 @@ const RewardsTable = ({ aggregatedRewards }) => {
   };
 
   return (
-    <>
+    <div style={{ overflowX: "auto" }}>
       <h2> User Monthly Rewards</h2>
 
       <table style={tableStyle}>
@@ -46,7 +46,11 @@ const RewardsTable = ({ aggregatedRewards }) => {
             ([monthYear, value], index) => (
               <tr
                 key={monthYear}
-                style={index % 2 === 0 ? trEvenStyle : {}}
+                style={{
+                  ...trEvenStyle,
+                  backgroundColor: custId === Number(value?.customerId) ? 'lightblue' : "#ffffff"
+                }}
+                
                 onMouseOver={(e) =>
                   (e.currentTarget.style.backgroundColor =
                     trHoverStyle.backgroundColor)
@@ -65,7 +69,7 @@ const RewardsTable = ({ aggregatedRewards }) => {
           )}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 

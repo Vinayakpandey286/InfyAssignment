@@ -2,7 +2,11 @@ import React, { useEffect, useState, useMemo } from "react";
 import RewardsTable from "./components/RewardsTable";
 import TotalRewardsTable from "./components/TotalRewardsTable";
 import TransactionTable from "./components/TransactionTable";
-import { aggregateByMonthAndYear, calculateRewardPoints, sortByDate } from "./utils/CalculateRewards";
+import {
+  aggregateByMonthAndYear,
+  calculateRewardPoints,
+  sortByDate,
+} from "./utils/CalculateRewards";
 import { fetchTransactions } from "./service/TransactionService";
 import Tab from "./components/Tab";
 import log from "loglevel"; // Import loglevel
@@ -17,6 +21,7 @@ const App = () => {
   const [transactions, setTransactions] = useState([]);
   const [activeTab, setActiveTab] = useState(0); // State for active tab
   const [buttonActive, setButtonActive] = useState(false); // State for the filter button
+  const [customerId, setCustomerId] = useState(null); // State for the filter button
 
   // Fetch transaction data from the service on component mount
   useEffect(() => {
@@ -61,6 +66,8 @@ const App = () => {
     buttonActive ? filteredTransactions : transactions
   );
 
+  console.log(customerId);
+
   return (
     <>
       {isLoading ? (
@@ -70,7 +77,13 @@ const App = () => {
       ) : (
         <div>
           {/* Title and Button Section */}
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
             <h1>User Rewards</h1>
             <button
               style={{
@@ -90,7 +103,6 @@ const App = () => {
           <Tab
             label1="Transactions"
             label2="Rewards"
-            label3="Total Rewards"
             onClickTab={setActiveTab} // Set active tab based on selection
             activeTab={activeTab} // Pass active tab to Tab component
           />
@@ -102,12 +114,19 @@ const App = () => {
             />
           )}
           {activeTab === 1 && (
-            <RewardsTable aggregatedRewards={aggregatedRewards} />
-          )}
-          {activeTab === 2 && (
-            <TotalRewardsTable
-              transactions={buttonActive ? filteredTransactions : transactions}
-            />
+            <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <TotalRewardsTable
+                transactions={
+                  buttonActive ? filteredTransactions : transactions
+                }
+                setCustId={setCustomerId}
+                custId={customerId}
+              />
+              <RewardsTable
+                aggregatedRewards={aggregatedRewards}
+                custId={customerId}
+              />
+            </div>
           )}
         </div>
       )}

@@ -11,7 +11,7 @@ export const aggregateByMonthAndYear = (transactions) => {
             monthYear,
             customerName
         };
-        return acc;
+        return acc; 
     }, {});
 };
 
